@@ -1,73 +1,29 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# 🚀 NestJS Authentication Project
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+![NestJS Logo](https://nestjs.com/img/logo-small.svg) ![TypeORM Logo](https://typeorm.io/logo.png) ![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+이 프로젝트는 [NestJS](https://nestjs.com/)를 사용하여 구현된 인증 시스템입니다. JWT 기반의 로그인 및 가입 기능과 함께, API 요청 보안을 위한 가드(guard)를 구현합니다.
 
-## Description
+## 🌟 기능 
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- **로그인**: 사용자는 이메일과 비밀번호를 사용하여 로그인할 수 있습니다.
+- **회원가입**: 새로운 사용자는 이름, 이메일, 비밀번호 등의 정보를 제공하여 계정을 생성할 수 있습니다.
+- **JWT 인증**: 로그인 성공 시, 사용자에게 JWT 토큰이 발급됩니다.
+- **인증된 사용자만이 특정 API에 접근할 수 있습니다.**
 
-## Installation
+## ⚙️ 설정
 
-```bash
-$ npm install
-```
+이 프로젝트를 사용하기 위해서는 다음과 같은 환경 설정이 필요합니다: 
+- `.env` 파일에 `JWT_SECRET` 및 데이터베이스 설정을 포함시킵니다.
+- 데이터베이스 연결을 위한 [TypeORM](https://typeorm.io/#/) 설정을 `app.module.ts`에 구성합니다.
 
-## Running the app
+## 🛠️ 개발 환경
 
-```bash
-# development
-$ npm run start
+- [NestJS](https://nestjs.com/)
+- [TypeORM](https://typeorm.io/#/)
+- [MySQL](https://www.mysql.com/) (또는 다른 RDBMS)
 
-# watch mode
-$ npm run start:dev
+## 📚 참고 문서 
 
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- NestJS 공식 문서: [링크](https://nestjs.com/)
+- JWT: [링크](https://jwt.io/)
