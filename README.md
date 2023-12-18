@@ -1,7 +1,5 @@
 # 🚀 NestJS Authentication Project
 
-![NestJS Logo](https://nestjs.com/img/logo-small.svg) ![TypeORM Logo](https://typeorm.io/logo.png) ![MySQL Logo](https://www.mysql.com/common/logos/logo-mysql-170x115.png)
-
 이 프로젝트는 [NestJS](https://nestjs.com/)를 사용하여 구현된 인증 시스템입니다. JWT 기반의 로그인 및 가입 기능과 함께, API 요청 보안을 위한 가드(guard)를 구현합니다.
 
 ## 🌟 기능 
